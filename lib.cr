@@ -1,3 +1,3 @@
-fun say_hello : Void
-  puts "Hello from lib.dylib"
+fun say_hello(name : UInt8*) : Void
+  puts "Hello #{String.new(name)}, from lib.dylib"
 end

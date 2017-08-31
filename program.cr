@@ -15,4 +15,4 @@ if error_ptr
   exit 1
 end
 
-asm("call *$0" :: "r"(say_hello.address))
+Proc(UInt8*, Void).new(say_hello, Pointer(Void).null).call("World".to_unsafe)
